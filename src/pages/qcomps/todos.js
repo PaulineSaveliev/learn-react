@@ -1,4 +1,4 @@
-const baseUrl = 'https://i.imgur.com/';
+const baseUrl = 'https://i.imgur.com/jA8hHMpm.jpg';
 const person = {
   name: 'Gregorio Y. Zara',
   imageId: '7vQD0fP',
@@ -14,8 +14,8 @@ export default function TodoList() {
     <div style={person.theme}>
       <h1>Person Name's Todos</h1>
       <img className="avatar"
-      src="baseURL + imageID + imageSize + .jpg"
-      alt="Person's Name"
+      src={baseUrl + person.imageID + person.imageSize}
+      alt={person.name}
       />
     </div>
   );
